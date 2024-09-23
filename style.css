@@ -13,14 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
-}
+} */
 
 body {
   margin: 0;
@@ -93,4 +93,38 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.navbar header {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.navbar header a {
+  margin-left: 30px;
+  display: inline-block;
+  padding: 15px 30px; /* 패딩을 조정해서 버튼 크기 조절 */
+  border: 2px solid #007bff;
+  border-radius: 8px; /* 버튼을 둥글게 */
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold; /* 텍스트 굵기 증가 */
+  transition: background-color 0.3s, border-color 0.3s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 버튼에 약간의 그림자 */
+}
+
+.navbar header a:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.navbar header a:active {
+  background-color: #003f7f;
+  border-color: #003f7f;
+  transform: scale(0.98); /* 클릭 시 살짝 축소 */
 }
