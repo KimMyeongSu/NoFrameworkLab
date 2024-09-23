@@ -1,10 +1,10 @@
 export default (container) => {
+  // 익명 함수
   const home = () => {
     container.textContent = "This is Home page"
   }
 
   const list = () => {
-    console.log(`이거콜?`)
     container.textContent = "This is List Page"
   }
 
